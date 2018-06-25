@@ -3,30 +3,46 @@
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#">
+
+      <a class="navbar-brand" href="">
         <img alt="BitClaims" src="img/bitclaims-logo.png" width="20" height="20">
       </a>
-      <a id="brand-text" class="navbar-brand" href="#">BitClaims</a>
+      <a id="brand-text" class="navbar-brand" href="">BitClaims</a>
 
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#aboutlink">about</a></li>
-        <li><a href="#team">team</a></li>
-        <!-- <li><a href="#">timeline</a></li> -->
+      <ul class="nav navbar-nav" style=" cursor: pointer;">
+        <li>
+          <a ng-click="gotoElement('aboutlink')">The Problem</a>
+        </li>
+        <li>
+          <a ng-click="gotoElement('solution')">The Solution</a>
+        </li>
+        <li>
+          <a ng-click="gotoElement('technology')">The Technology</a>
+        </li>
+        <!-- <li><a ng-click="gotoElement('timeline')" >Timeline</a></li> -->
+        <li>
+          <a ng-click="gotoElement('team')">Team</a>
+        </li>
+
       </ul>
+
+
+
+
       <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="#">blog</a></li> -->
-        <li><a target="_blank" href="BitClaims_WhitePaper_2.FINAL.pdf">whitepaper</a></li>
+
+
         <form class="navbar-form navbar-left">
-          <button type="submit" class="btn btn-default sign-up-button">sign up</button>
+          <!-- <button type="submit" class="btn btn-default sign-up-button" ><li><a target="_blank" href="BitClaims_WhitePaper_2.FINAL.pdf"  style="color: white;">White Paper</a></li></button> -->
         </form>
       </ul>
     </div>
@@ -35,36 +51,53 @@
 </nav>
 
 
+
+
 <nav class="navbar navbar-default bitclaims-navbar hidden-md hidden-lg navbar-fixed-top">
   <div class="container">
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobilenav">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand">
         <img alt="BitClaims" src="img/bitclaims-logo.png" width="20" height="20">
       </a>
-      <a id="brand-text" class="navbar-brand" href="#">BitClaims</a>
+      <a ng-click="gotoElement('hero')" id="brand-text" class="navbar-brand">BitClaims</a>
 
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="mobilenav">
       <ul class="nav navbar-nav">
-        <li><a href="#aboutlink">about</a></li>
-        <li><a href="#team">team</a></li>
-        <!-- <li><a href="#">timeline</a></li> -->
+        <li class="item">
+          <a ng-click="gotoElement('aboutlink')" data-toggle="collapse" data-target="#mobilenav">
+            <span class="nav-text ">The Problem</span>
+          </a>
+        </li>
+        <li class="item">
+          <a ng-click="gotoElement('solution')" data-toggle="collapse" data-target="#mobilenav">
+            <span class="nav-text">The Solution</span>
+          </a>
+        </li>
+        <li class="item">
+          <a ng-click="gotoElement('technology')" data-toggle="collapse" data-target="#mobilenav">
+            <span class="nav-text">The Technology</span>
+          </a>
+        </li>
+        <!-- <li class = "item"><a  ng-click="gotoElement('timeline')" data-toggle="collapse" data-target="#mobilenav"><span class ="nav-text">Timeline</span></a></li> -->
+        <li class="item">
+          <a ng-click="gotoElement('team')" data-toggle="collapse" data-target="#mobilenav">
+            <span class="nav-text">Team</span>
+          </a>
+        </li>
+        <!-- <li class = "item"><a target="_blank" href="BitClaims_WhitePaper_2.FINAL.pdf"><span class ="nav-text">Whitepaper</span></a></li> -->
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="#">blog</a></li> -->
-        <li><a target="_blank" href="BitClaims_WhitePaper_2.FINAL.pdf">whitepaper</a></li>
-        <!-- <li><a href="#">signup</a></li> -->
-      </ul>
+
     </div>
-    <!-- /.navbar-collapse -->
+
   </div>
 </nav>

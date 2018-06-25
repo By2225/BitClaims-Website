@@ -12,21 +12,19 @@
 }
 
 .Healthcare-costs-are-out-of-control {
-
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   color: #595c6e;
 }
 
 .The-problem-fullwidth {
-  background-color: #F9DFC3;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(133deg, rgba(255, 255, 255, 1) 0%, rgba(239, 189, 189, 1) 100%);
 }
 
 .Unsustainable-Pricing {
-
-  height: 32px;
+  font-size: 140%;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 24px;
   color: #63549d;
   margin-bottom: 5%;
   margin-top: 5%;
@@ -36,16 +34,17 @@
   /* width: 502px;
   height: 125px; */
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
+  font-size: 200px;
   color: #7c7f8f;
 }
 
 .spacer {
+  /*Messes up the mobile view*/
   height: 70px;
 }
 
 .mobile-spacer {
-  height: 20px;
+  height: 30px;
 }
 
 .row-eq-height {
@@ -59,7 +58,7 @@
   vertical-align: middle
 }
 
-.graph{
+.graph {
   position: relative;
   bottom: 10px;
 }
